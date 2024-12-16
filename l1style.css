@@ -1,0 +1,629 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    color: #FFFFFF;
+    background-image: url("images/background1.png");
+    background-size: cover;
+}
+
+.container {
+    padding: 1% 15%;
+}
+
+.onelineBar, .oneline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.onelineBar {
+    gap: 20px;
+}
+
+
+.button1 {
+    color: #00E0D0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 1px solid #00E0D0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Hammersmith One", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    width: 130px;
+    margin: 0 auto;
+}
+
+.button2 {
+    color: #00E0D0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 1px solid #00E0D0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Hammersmith One", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    width: 130px;
+    text-align: center;
+}
+
+
+.button1:hover, .button2:hover {
+    background-color: #33F2E1;
+    color: #005F4F;
+    border-color: #33F2E1;
+}
+
+header .image {
+    margin: 15px 15px 15px 0;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", serif;
+    font-style: normal;
+}
+
+    .nav-bar a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+        .nav-bar a:hover {
+            color: #00E0D0;
+        }
+
+
+header .content {
+    text-align: center;
+    color: #FFFFFF;
+    margin: 15% 20%;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+header .text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10%;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.under {
+    color: #00E0D0;
+    margin-top: 0;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 5%;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+    .dot.active {
+        background-color: #00E0D0;
+        border-color: #00E0D0;
+    }
+
+    .dot:hover {
+        border-color: #00E0D0;
+    }
+
+
+.story .image {
+    margin: 7%;
+    width: 25%;
+    height: auto;
+}
+
+.story .content {
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+
+.story h1 {
+    margin-bottom: 5%;
+    margin-top: 0;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.story .text1, .story .text2 {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.story .text2 {
+    margin-bottom: 7%;
+    margin-top: 5%;
+}
+
+
+.watch {
+    background-image: url("images/background2.png");
+    background-size: cover;
+}
+
+    .watch .content {
+        margin: 20%;
+    }
+
+    .watch .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 15%;
+        height: auto;
+    }
+
+    .watch p {
+        color: #FFFFFF;
+        text-align: center;
+        margin: 5% 0;
+        font-family: "Roboto", serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+
+.expertise {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+    .expertise-flex {
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+    }
+
+        .expertise-flex .item {
+            padding: 20px;
+            width: 28%;
+        }
+
+    .underExp {
+        color: #A9A9A9;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .expertise h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-family: "Playfair Display", serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .expertise .text {
+        font-size: 1rem;
+        margin-bottom: 0.5%;
+        margin-top: 1.0%;
+        font-family: "Playfair Display", serif;
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    .expertise .item h3 {
+        font-size: 1rem;
+        font-family: "Roboto", serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .expertise .item p {
+        font-size: 1rem;
+        font-family: "Roboto", serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .expertise .image {
+        margin-bottom: 3%;
+    }
+
+
+.team {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-image: url("images/background3.png");
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+    .underTm {
+        color: #A9A9A9;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .team h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-family: "Playfair Display", serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .team .text1 {
+        font-size: 1rem;
+        margin-bottom: 0.5%;
+        margin-top: 1.0%;
+        font-family: "Playfair Display", serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .team .text2 {
+        font-size: 1rem;
+        font-family: "Roboto", serif;
+        font-weight: 300;
+        font-style: normal;
+        margin-bottom: 2.5%;
+    }
+
+    .team .card h3 {
+        font-size: 1rem;
+        font-family: "Roboto", serif;
+        font-weight: 600;
+        font-style: normal;
+        margin-bottom: 0;
+    }
+
+    .team .card p {
+        font-size: 0.9rem;
+        font-family: "Roboto", serif;
+        font-weight: 300;
+        font-style: normal;
+        margin-top: 2.5%;
+    }
+
+.card-flex {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+    .card-flex .card {
+        border: 0.1px solid #D3D3D3;
+        margin: 10px;
+        padding: 0;
+        width: 270px;
+    }
+
+            .card .card-top{
+                background-color: #FFFFFF;
+                height: 250px;
+            }
+
+            .card .card-bottom {
+                padding: 3%;
+            }
+
+
+.feedback {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.onelineFeedback {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.clients-flex {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-start;
+}
+
+    .clients-flex .item {
+        padding: 20px;
+        height: 60px;
+        margin: 0 auto;
+    }
+
+    .col1, .col2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formFeedback, .clients {
+        width: 500px;
+        height: 600px;
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+    .field, .message {
+        width: 400px;
+        padding: 17px;
+        margin-bottom: 4%;
+        border: 1px solid #DDDDDD;
+        outline: none;
+    }
+
+    .message {
+        height: 200px;
+        resize: none;
+    }
+
+    .feedback h1 {
+        font-family: "Playfair Display", serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.5rem;
+        margin-bottom: 7%;
+    }
+
+
+footer {
+    background-image: url("images/background4.png");
+    background-size: cover;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: #FFFFFF;
+    font-family: "Roboto", serif;
+    font-style: normal;
+}
+
+    footer .oneline p {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .nav-bar-footer {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .nav-bar-footer a {
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 400;
+            transition: color 0.3s ease;
+            color: #FFFFFF;
+        }
+
+            .nav-bar-footer a:hover {
+                color: #00E0D0;
+            }
+
+    .footer-flex {
+        margin-top: 3%;
+        margin-bottom: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+        .onelineUp {
+            display: flex;
+            justify-content: left;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+            .intouch {
+                width: 180px;
+                padding: 17px;
+                margin: 0;
+                border: 1px solid #DDDDDD;
+                outline: none;
+                background-color: transparent;
+                font-weight: 300;
+                font-size: 1rem;
+                margin-bottom: 10%;
+            }
+
+        .footer-flex .item {
+            padding: 0;
+            width: 300px;
+        }
+
+            .imageLogo {
+                margin-bottom: 4%;
+            }
+
+            .footer-flex .item p {
+                font-size: 1rem;
+                line-height: 1.8;
+                font-weight: 370;
+                margin: 0;
+                margin-bottom: 4%;
+            }
+
+            .footer-flex .item h3 {
+                font-size: 1rem;
+                font-weight: 550;
+                margin-top: 0;
+                margin-bottom: 10%;
+            }
+
+        .footer-flex .image1 {
+            width: 25px;
+            height: auto;
+        }
+
+        .footer-flex .image2 {
+            width: 35px;
+            height: auto;
+        }
+
+        .sendImg {
+            background-color: #F5F5F5;
+            opacity: 0.5;
+            height: 54px;
+            width: 70px;
+            align-content: center;
+        }
+
+            .sendImg .image2 {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+    footer .oneline {
+        gap: 27px;
+    }
+
+
+@media screen and (max-width: 1400px) {
+    .onelineFeedback {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .clients-flex {
+        justify-content: center;
+    }
+
+    form {
+        align-items: center;
+    }
+
+    .footer-flex {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    .onelineBar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container {
+        padding: 1% 12%;
+    }
+
+    .content {
+        margin: 12% 17%;
+    }
+}
+
+@media screen and (max-width: 915px) {
+
+    .nav-bar {
+        font-size: 70%;
+        gap: 20px;
+    }
+
+    .container {
+        padding: 1% 7%;
+    }
+
+    .content {
+        margin: 7% 12%;
+    }
+
+    .field, .message{
+        width: 80%;
+    }
+
+    .feedback .item {
+        padding: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 696px) {
+    footer .oneline {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .onelineBar {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 512px) {
+
+    .nav-bar {
+        font-size: 65%;
+        gap: 12px;
+    }
+
+    .nav-bar-footer {
+        font-size: 90%;
+        gap: 20px;
+    }
+
+    .container {
+        padding: 1% 5%;
+    }
+
+    .content {
+        margin: 5% 10%;
+    }
+}
